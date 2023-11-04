@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Prototipo_4</string>
+    <string name="btn_inicio_sesion">Inicio de sesión</string>
+    <string name="Et_usuario">Nombre de usuario</string>
+    <string name="Et_contrasenia">Contraseña</string>
+    <string name="btn_registrarse">Registrarse</string>
+
+    <string name="Tv_home">Menú principal</string>
+    <string name="btn_ventas">Ventas</string>
+    <string name="btn_inventario">Inventarios</string>
+    <string name="btn_usuarios">Usuarios</string>
+    <string name="btn_cerrar">Cerrar sesión</string>
+    <string name="btn_baja">Baja</string>
+    <string name="btn_editar">Modificar</string>
+    <string name="Et_id">Id del producto</string>
+
+    <string name="Et_idUsuario">Id usuario</string>
+    <string name="Et_Nombre">Nombres</string>
+    <string name="Et_Contrasenia">Contreseña</string>
+    <string name="Et_tipo">Tipo</string>
+    <string name="Et_Ap_paterno">Apellido paterno</string>
+    <string name="btn_listaUsers">Lista de usuarios</string>
+    <string name="btn_altaUsers">Alta usuario</string>
+    <string name="Et_Ap_materno">Apellido materno</string>
+    <string name="Txt_Controluser">Control de usuarios</string>
+
+    <string name="Campo_id">Id</string>
+    <string name="Campo_producto">Nombre del producto</string>
+    <string name="Campo_categoria">Categoría</string>
+    <string name="Campo_cantidad">Cantidad disponible</string>
+    <string name="Campo_precio">Precio individual</string>
+
+    <string name="Txt_idUsuario">Id de usuario</string>
+    <string name="Txt_nombres">Nombres</string>
+    <string name="Txt_contrasenia">Contraseña</string>
+    <string name="Txt_tipo">Tipo de usuario</string>
+    <string name="Txt_DetallesUsuario">Detalles de usuario</string>
+    <string name="Campo_idUsuario">Id de usuario</string>
+    <string name="Campo_nombre">Nombres</string>
+    <string name="Campo_contrasenia">Contrasenia</string>
+    <string name="Campo_tipo">Tipo de usuario</string>
+    <string name="EliminarUsuario">Eliminar</string>
+    <string name="ModificarUsuario">Modificar</string>
+
+
+    <string name="Tv_producto">Nombre del producto</string>
+    <string name="Tv_precio">Precio individual</string>
+    <string name="btn_confirmar">Confirmar</string>
+    <string name="btn_Consultar">Consultar</string>
+    <string name="btn_Cancelar">Cancelar</string>
+    <string name="Tv_categoria">Categoría</string>
+    <string name="Tv_cantidad">Cantidad</string>
+
+    <string name="Tv_ventas">Punto de venta</string>
+    <string name="btn_buscar">Buscar artículo</string>
+    <string name="btn_agregar">Agregar</string>
+    <string name="btn_confirmarVenta">Confirmar Venta</string>
+    <string name="Ed_buscarProducto">Id del producto</string>
+    <string name="Tv_precioVenta">Precio del producto</string>
+    <string name="Tv_total">Total</string>
+    <string name="App_name">Inventario de electrónica</string>
+    <string name="Et_cantidadCompra">Cantidad a comprar</string>
+    <string name="Tv_cantidadVenta">Cantidad disponible</string>
+    <string name="Tv_nombreArticulo">Nombre del producto</string>
+
+    <string name="btn_lista_ventas">Registro de ventas</string>
+    <string name="Tv_detallesVentas">Detalles de la venta</string>
+
+
+
+
+
+
+</resources>

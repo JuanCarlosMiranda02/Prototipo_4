@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ventas">
+
+    <TextView
+        android:id="@+id/Tv_Ventas"
+        android:layout_width="260dp"
+        android:layout_margin="@dimen/Et_margen"
+        android:layout_height="49dp"
+        android:textAlignment="center"
+        android:text="@string/Tv_ventas"
+        android:textSize="@dimen/Et_margen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Et_buscarIdproducto"
+        android:layout_width="215dp"
+        android:layout_height="55dp"
+        android:drawableLeft="@mipmap/ic_buscar"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="@string/btn_buscar"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_buscarArticulo" />
+
+    <EditText
+        android:id="@+id/Et_cantidadComprar"
+        android:layout_width="217dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="@string/Et_cantidadCompra"
+        android:inputType="number"
+        android:drawableLeft="@mipmap/ic_comprar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_CantidadAComprar" />
+
+    <Button
+        android:id="@+id/btn_agregar"
+        android:layout_width="113dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="320dp"
+        android:text="@string/btn_agregar"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.369"
+        app:layout_constraintStart_toEndOf="@+id/Tv_Campoprecio"
+        app:layout_constraintTop_toBottomOf="@+id/btn_buscarArticulo" />
+
+    <Button
+        android:id="@+id/btn_buscarArticulo"
+        android:layout_width="126dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/btn_buscar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toEndOf="@+id/Et_buscarIdproducto"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_Ventas" />
+
+    <TextView
+        android:id="@+id/Tv_CantidadAComprar"
+        android:layout_width="149dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Et_cantidadCompra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_Campoprecio" />
+
+    <Button
+        android:id="@+id/btn_confirmarVenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/ic_agregar"
+        android:layout_marginTop="20dp"
+        android:text="@string/btn_confirmarVenta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_TotalVenta" />
+
+    <TextView
+        android:id="@+id/Tv_total"
+        android:layout_width="170dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/Tv_total"
+        android:textSize="@dimen/Txt_tamanio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_cantidadComprar" />
+
+    <TextView
+        android:id="@+id/Tv_Precioindividual"
+        android:layout_width="149dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Tv_precioVenta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_cantidadDisponible" />
+
+    <TextView
+        android:id="@+id/Tv_cantidadDisponible"
+        android:layout_width="215dp"
+        android:layout_height="55dp"
+        android:drawableLeft="@mipmap/ic_cantidad"
+        android:layout_marginStart="16dp"
+        android:hint="@string/Tv_cantidadVenta"
+        android:textSize="@dimen/Et_margenPeq"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_Stockdisponible" />
+
+    <TextView
+        android:id="@+id/Tv_nombreArticulo"
+        android:layout_width="215dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:drawableLeft="@mipmap/ic_producto"
+        android:hint="@string/Tv_nombreArticulo"
+        android:textSize="@dimen/Et_margenPeq"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_NombreDelArticulo" />
+
+    <TextView
+        android:id="@+id/Tv_Stockdisponible"
+        android:layout_width="149dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Tv_cantidadVenta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_nombreArticulo" />
+
+    <TextView
+        android:id="@+id/Tv_NombreDelArticulo"
+        android:layout_width="149dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Tv_nombreArticulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_buscarIdproducto" />
+
+    <TextView
+        android:id="@+id/Tv_buscarArticulo"
+        android:layout_width="149dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/Ed_buscarProducto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_Ventas" />
+
+    <TextView
+        android:id="@+id/Tv_TotalVenta"
+        android:layout_width="175dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Total de la venta"
+        android:textSize="@dimen/Et_margenPeq"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_cantidadComprar" />
+
+    <TextView
+        android:id="@+id/Tv_Campoprecio"
+        android:layout_width="218dp"
+        android:layout_height="48dp"
+        android:drawableLeft="@mipmap/ic_precio"
+        android:layout_marginStart="16dp"
+        android:hint="@string/Tv_precioVenta"
+        android:textSize="@dimen/Et_margenPeq"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_Precioindividual" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

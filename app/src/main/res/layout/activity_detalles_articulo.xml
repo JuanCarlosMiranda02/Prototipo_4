@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetallesArticulo">
+
+    <TextView
+        android:id="@+id/et_inventario2"
+        android:layout_width="327dp"
+        android:layout_height="73dp"
+        android:text="Control de inventario"
+        android:textAlignment="center"
+        android:textSize="@dimen/Et_margen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Tv_id"
+        android:layout_width="127dp"
+        android:layout_height="29dp"
+        android:layout_marginLeft="@dimen/Et_margerIzq"
+        android:text="@string/Campo_id"
+        android:textSize="@dimen/Et_margen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_inventario2" />
+
+    <TextView
+        android:id="@+id/Tv_producto"
+        android:layout_width="171dp"
+        android:layout_height="27dp"
+        android:layout_marginLeft="@dimen/Et_margerIzq"
+        android:text="@string/Campo_producto"
+        android:textSize="@dimen/Txt_tamanio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_campoId" />
+
+    <TextView
+        android:id="@+id/Tv_categoria"
+        android:layout_width="133dp"
+        android:layout_marginLeft="@dimen/Et_margerIzq"
+        android:layout_height="26dp"
+        android:text="@string/Campo_categoria"
+        android:textSize="@dimen/Txt_tamanio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_campoProducto" />
+
+    <TextView
+        android:id="@+id/Tv_cantidad"
+        android:layout_width="172dp"
+        android:layout_height="26dp"
+        android:text="@string/Campo_cantidad"
+        android:layout_marginLeft="@dimen/Et_margerIzq"
+        android:textSize="@dimen/Txt_tamanio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_campoCategoria" />
+
+    <TextView
+        android:id="@+id/Tv_precio"
+        android:layout_width="159dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="@dimen/Et_margerIzq"
+        android:text="@string/Campo_precio"
+        android:textSize="@dimen/Txt_tamanio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_campoCantidad" />
+
+    <TextView
+        android:id="@+id/Et_campoId"
+        android:layout_width="279dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="12dp"
+
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=" "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_id" />
+
+    <EditText
+        android:id="@+id/Et_campoProducto"
+        android:layout_width="288dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="@dimen/Et_margerIzq"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=" "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_producto" />
+
+    <EditText
+        android:id="@+id/Et_campoCategoria"
+        android:layout_width="278dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="@dimen/Et_margerIzq"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=" "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_categoria" />
+
+    <EditText
+        android:id="@+id/Et_campoCantidad"
+        android:layout_width="280dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="@dimen/Et_margerIzq"
+        android:ems="10"
+
+        android:inputType="number"
+        android:text=" "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_cantidad" />
+
+    <EditText
+        android:id="@+id/Et_campoPrecio"
+        android:layout_width="276dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="@dimen/Et_margerIzq"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text=" "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_precio" />
+
+    <Button
+        android:id="@+id/btn_eliminar"
+        android:layout_width="139dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="OnClickInventario"
+        android:text="@string/btn_baja"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_campoPrecio" />
+
+    <Button
+        android:id="@+id/btn_modificar"
+        android:layout_width="177dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        android:onClick="OnClickInventario"
+        android:text="@string/btn_editar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_campoPrecio" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

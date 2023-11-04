@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detalles_usuarios">
+
+    <TextView
+        android:id="@+id/txt_Detalles_usuario"
+        android:layout_width="284dp"
+        android:layout_height="56dp"
+        android:layout_margin="@dimen/Et_margen"
+        android:layout_marginTop="16dp"
+        android:text="@string/Txt_DetallesUsuario"
+        android:textAlignment="center"
+        android:textSize="@dimen/Et_margen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_modificarUsuario"
+        android:layout_width="189dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@mipmap/ic_editar_user"
+        android:onClick="OnClickUser"
+        android:text="@string/ModificarUsuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_campoTipo" />
+
+    <Button
+        android:id="@+id/btn_eliminarUsuario"
+        android:layout_width="186dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@mipmap/ic_delete_user"
+        android:onClick="OnClickUser"
+        android:text="@string/EliminarUsuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_modificarUsuario" />
+
+    <EditText
+        android:id="@+id/Et_campoNombre"
+        android:layout_width="301dp"
+        android:layout_height="63dp"
+        android:layout_marginLeft="@dimen/Et_margerIzq"
+        android:ems="10"
+        android:hint="@string/Campo_nombre"
+        android:drawableLeft="@mipmap/ic_usuario"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Txt_nombres" />
+
+    <EditText
+        android:id="@+id/Et_campoContrasenia"
+        android:layout_width="301dp"
+        android:layout_height="63dp"
+        android:layout_marginLeft="@dimen/Et_margerIzq"
+        android:ems="10"
+        android:hint="@string/Et_contrasenia"
+        android:drawableLeft="@mipmap/ic_candado"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Txt_contrasenia" />
+
+    <TextView
+        android:id="@+id/Et_campoidUsuario"
+        android:layout_width="301dp"
+        android:layout_height="63dp"
+        android:ems="10"
+        android:drawableLeft="@mipmap/ic_id"
+        android:hint="@string/Et_idUsuario"
+        android:inputType="number"
+        android:layout_marginLeft="@dimen/Et_margerIzq"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Txt_idusuario" />
+
+    <EditText
+        android:id="@+id/Et_campoTipo"
+        android:layout_width="301dp"
+        android:layout_height="63dp"
+        android:layout_marginLeft="@dimen/Et_margerIzq"
+        android:ems="10"
+        android:drawableLeft="@mipmap/ic_edit_user"
+        android:hint="@string/Campo_tipo"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Txt_tipo" />
+
+    <TextView
+        android:id="@+id/Txt_idusuario"
+        android:layout_marginTop="@dimen/Et_margenPeq"
+        android:layout_marginLeft="@dimen/Et_margerIzq"
+        android:layout_width="125dp"
+        android:textSize="@dimen/Txt_tamanio"
+        android:textAlignment="center"
+        android:layout_height="33dp"
+        android:text="@string/Txt_idUsuario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Detalles_usuario" />
+
+
+    <TextView
+        android:id="@+id/Txt_nombres"
+        android:layout_marginLeft="@dimen/Et_margerIzq"
+        android:layout_marginTop="@dimen/Et_margenPeq"
+        android:textSize="@dimen/Txt_tamanio"
+        android:textAlignment="center"
+        android:layout_width="120dp"
+        android:layout_height="28dp"
+        android:text="@string/Txt_nombres"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_campoidUsuario" />
+
+    <TextView
+        android:id="@+id/Txt_contrasenia"
+        android:layout_width="126dp"
+        android:textSize="@dimen/Txt_tamanio"
+        android:textAlignment="center"
+        android:layout_marginLeft="@dimen/Et_margerIzq"
+        android:layout_marginTop="@dimen/Et_margenPeq"
+        android:layout_height="34dp"
+        android:text="@string/Txt_contrasenia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_campoNombre" />
+
+    <TextView
+        android:id="@+id/Txt_tipo"
+        android:textSize="@dimen/Txt_tamanio"
+        android:textAlignment="center"
+        android:layout_marginLeft="@dimen/Et_margerIzq"
+        android:layout_width="140dp"
+        android:layout_marginTop="@dimen/Et_margenPeq"
+        android:layout_height="31dp"
+        android:text="@string/Txt_tipo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_campoContrasenia" />
+</androidx.constraintlayout.widget.ConstraintLayout>

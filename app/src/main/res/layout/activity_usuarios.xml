@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Usuarios">
+    <TextView
+        android:id="@+id/Et_inventario"
+        android:layout_width="327dp"
+        android:layout_marginBottom="@dimen/Et_margen"
+        android:layout_height="73dp"
+        android:layout_marginTop="@dimen/Et_margen"
+        android:text="@string/Txt_Controluser"
+        android:textAlignment="center"
+        android:textSize="@dimen/Et_margen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Et_idUsuario"
+        android:layout_width="283dp"
+        android:layout_marginTop="@dimen/Et_margenPeq"
+        android:drawableLeft="@mipmap/ic_id"
+        android:layout_marginLeft="@dimen/Et_margerIzq"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:hint="@string/Et_idUsuario"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_inventario" />
+
+    <EditText
+        android:id="@+id/Et_nombre"
+        android:layout_marginTop="@dimen/Et_margenPeq"
+        android:layout_marginLeft="@dimen/Et_margerIzq"
+        android:drawableLeft="@mipmap/ic_usuario"
+        android:layout_width="283dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:hint="@string/Et_Nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_idUsuario" />
+
+    <EditText
+        android:id="@+id/Et_Contrsenia"
+        android:layout_marginTop="@dimen/Et_margenPeq"
+        android:layout_marginLeft="@dimen/Et_margerIzq"
+        android:layout_width="283dp"
+        android:layout_height="55dp"
+        android:drawableLeft="@mipmap/ic_candado"
+        android:ems="10"
+        android:hint="@string/Et_contrasenia"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_nombre" />
+
+    <EditText
+        android:id="@+id/Et_tipo"
+        android:layout_width="283dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="48dp"
+        android:drawableLeft="@mipmap/ic_edit_user"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/Et_tipo"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_Contrsenia" />
+
+    <Button
+        android:id="@+id/btn_consultaUser"
+        android:layout_marginTop="@dimen/Et_margen"
+        android:layout_width="207dp"
+        android:layout_height="48dp"
+        android:onClick="IrListaUsuarios"
+        android:text="@string/btn_listaUsers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_altaUser" />
+
+    <Button
+        android:id="@+id/btn_altaUser"
+        android:layout_width="207dp"
+        android:layout_marginTop="@dimen/Et_margen"
+        android:layout_height="48dp"
+        android:onClick="RegistrarUsuarios"
+        android:text="@string/btn_altaUsers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_tipo" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="59dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_altaUser"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_tipo"
+        app:srcCompat="@mipmap/ic_new_user" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="59dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_consultaUser"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:srcCompat="@mipmap/ic_lista_users" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

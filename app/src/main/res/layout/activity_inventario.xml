@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inventario">
+
+    <EditText
+        android:id="@+id/Et_producto"
+        android:layout_width="338dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="@dimen/Et_margen"
+        android:drawableLeft="@mipmap/ic_producto"
+        android:ems="10"
+        android:hint="@string/Tv_producto"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_id" />
+
+    <EditText
+        android:id="@+id/Et_categoria"
+        android:layout_marginTop="@dimen/Et_margen"
+        android:layout_width="338dp"
+        android:drawableLeft="@mipmap/ic_categoria"
+        android:layout_height="58dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/Tv_categoria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_producto" />
+
+    <EditText
+        android:id="@+id/Et_cantidad"
+        android:layout_width="338dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="@dimen/Et_margen"
+        android:ems="10"
+        android:drawableLeft="@mipmap/ic_cantidad"
+        android:inputType="number"
+        android:hint="@string/Tv_cantidad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_categoria" />
+
+    <EditText
+        android:id="@+id/Et_precio"
+        android:layout_width="338dp"
+        android:layout_marginTop="@dimen/Et_margen"
+        android:layout_height="58dp"
+        android:ems="10"
+        android:drawableLeft="@mipmap/ic_precio"
+        android:inputType="numberDecimal"
+        android:hint="@string/Tv_precio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_cantidad" />
+
+    <Button
+        android:id="@+id/btn_alta"
+        android:layout_width="183dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:drawableLeft="@mipmap/ic_new_products"
+        android:onClick="Registrar"
+        android:text="@string/btn_confirmar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_precio" />
+
+    <Button
+        android:id="@+id/btn_buscar"
+        android:layout_width="183dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:drawableLeft="@mipmap/ic_list_products"
+        android:onClick="IrLista"
+        android:text="@string/btn_Consultar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_precio" />
+
+    <TextView
+        android:id="@+id/Et_inventario"
+        android:layout_width="327dp"
+        android:layout_marginBottom="@dimen/Et_margen"
+        android:layout_height="73dp"
+        android:text="Control de inventario"
+        android:textAlignment="center"
+        android:textSize="@dimen/Et_margen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Et_id"
+        android:layout_width="338dp"
+        android:layout_height="58dp"
+        android:drawableLeft="@mipmap/ic_id"
+        android:ems="10"
+        android:hint="@string/Et_id"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Et_inventario" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

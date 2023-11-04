@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Et_margen">25dp</dimen>
+    <dimen name="Et_margenPeq">15dp</dimen>
+    <dimen name="Et_margerIzq">50dp</dimen>
+    <dimen name="Et_margerTop">160dp</dimen>
+    <dimen name="Txt_tamanioGr">30dp</dimen>
+    <dimen name="Txt_tamanioCh">25dp</dimen>
+    <dimen name="Txt_tamanio">18dp</dimen>
+    <dimen name="Txt_tamanioENORME">50dp</dimen>
+
+
+
+
+
+
+
+
+
+</resources>
